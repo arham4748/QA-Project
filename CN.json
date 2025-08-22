@@ -1,0 +1,73 @@
+﻿{
+    "menu": {
+        "account": "我的帐户",
+        "trans": "历史翻译记录",
+        "signout": "退出"
+    },
+    "translate": {
+        "text": "文本翻译",
+        "file": "文档翻译",
+        "buy": "购买额度",
+        "src": "源语言",
+        "trg": "目标语言",
+        "slt-src": "选择源语言",
+        "slt-trg": "选择目标语言",
+        "type-here": "请输入文本进行翻译...",
+        "copied": "复制成功",
+        "trns-now": "开始翻译",
+        "trns": "源文件",
+        "ref": "参考文件",
+        "drg-file": "点击或者拖拽文件上传",
+        "sup-file": "支持文件格式：",
+        "more": "更多",
+        "size-file": "最大支持文件大小为 10MB",
+        "up-ref": "上传参考文件",
+        "file-up": "点击选择",
+        "t-list": "术语表",
+        "sup-ft": "支持的文件类型：",
+        "crt": "已创建",
+        "r-trns": "最近翻译",
+        "source": "文件名",
+        "type": "类型",
+        "lang": "语言对",
+        "t-chrc": "已翻译字符",
+        "dt": "日期时间",
+        "view": "查看",
+        "download": "下载",
+        "down-all": "全部下载",
+        "copy": "复制",
+        "processing": "正在处理",
+        "completed": "已完成",
+        "failed": "失败"
+    },
+    "msg": {
+        "mandatoryfields": "要开始翻译，须填写必填字段",
+        "srcfield": "确保已选择源语言",
+        "trgfield": "确保已选择目标语言",
+        "engfield": "确保已选择翻译引擎",
+        "txtfield": "确保已输入要翻译的文本",
+        "filefield": "确保已选择要翻译的文件",
+        "fetch": "正在匹配机翻引擎...",
+        "mbexceed": "您上传的文件超过了 10 MB 的限制。请上传小于 10 MB 的文件"
+    },
+    "error": {
+        "processing_failed": "处理失败！请刷新并重试",
+        "text_processing_failed": "您的文本无法由此引擎处理。请选择其他引擎或修改文本。",
+        "file_not_supported": "此引擎当前不支持您的文件。请选择其他引擎或其他文件。",
+        "languages_not_supported": "当前不支持这些语言。请选择其他语言。",
+        "missing_information": "缺少必需的信息",
+        "character_limit_exceeded": "超出字符限制！",
+        "translation_processing_failed": "翻译处理失败！请重试...",
+        "no_file_uploaded": "未上传文件",
+        "unsupported_file": "此引擎不支持您的文件。请尝试其他文件。",
+        "unauthorized": "未经授权的访问！",
+        "upload_failed": "文件上传失败！",
+        "doc_id_missing": "未找到文档 ID",
+        "unable_ref_file": "无法链接参考文件。",
+        "missing_languages": "缺少语言！"
+    },
+    "success": {
+        "translation_created": "翻译已创建！",
+        "translation_s_created": "翻译创建成功！"
+    }
+}

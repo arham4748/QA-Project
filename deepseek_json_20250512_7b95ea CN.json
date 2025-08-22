@@ -1,0 +1,95 @@
+{
+  "testCases": [
+    {
+      "id": "TC - 001",
+      "description": "使用正确的凭证进行有效登录",
+      "priority": "高",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button"
+      ],
+      "expectedResult": "用户登录成功并被重定向到仪表盘",
+      "status": "未执行"
+    },
+    {
+      "id": "TC - 002",
+      "description": "使用无效密码登录",
+      "priority": "中",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username",
+        "Enter invalid password",
+        "Click login button"
+      ],
+      "expectedResult": "显示错误消息“凭证无效”",
+      "status": "未执行"
+    },
+    {
+      "id": "TC - 003",
+      "description": "使用空用户名登录",
+      "priority": "低",
+      "steps": [
+        "Navigate to login page",
+        "Leave username field empty",
+        "Enter valid password",
+        "Click login button"
+      ],
+      "expectedResult": "出现用户名的字段验证错误",
+      "status": "未执行"
+    }
+  ],
+  "testData": {
+    "users": {
+      "validUser": {
+        "username": "testuser@example.com",
+        "password": "SecureP@ss123"
+      },
+      "invalidUser": {
+        "username": "nonexistent@example.com",
+        "password": "WrongP@ss"
+      }
+    },
+    "boundaryValues": {
+      "stringFields": {
+        "minLength": 1,
+        "maxLength": 255,
+        "specialCharacters": "!@#$%^&*()_+-=[]{}|;:',.<>?\/~`"
+      },
+      "numericFields": {
+        "minValue": 0,
+        "maxValue": 999999,
+        "decimalPlaces": 2
+      }
+    }
+  },
+  "environment": {
+    "name": "测试环境",
+    "url": "https:\/\/qa.example.com",
+    "browsers": ["Chrome", "Firefox", "Edge", "Safari"],
+    "database": {
+      "type": "MySQL",
+      "version": "8.0",
+      "credentials": {
+        "username": "qa_user",
+        "password": "qa_password_123"
+      }
+    }
+  },
+  "metadata": {
+    "createdBy": "测试团队",
+    "creationDate": "2023年11月15日",
+    "lastModified": "2023年11月16日",
+    "version": "1.0.1",
+    "tags": ["authentication", "regression", "smoke"]
+  },
+  "specialCases": {
+    "nullValue": null,
+    "emptyString": "",
+    "largeNumber": 9999999999999999,
+    "unicodeCharacters": "日语 西班牙语 法语",
+    "escapeCharacters": "第一行\\n第二行\\t制表符",
+    "booleanValues": [true, false]
+  }
+}
