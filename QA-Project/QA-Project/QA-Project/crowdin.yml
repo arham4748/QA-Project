@@ -1,0 +1,3 @@
+files:
+  - source: public/translations/*.txt
+    translation: public/translations/new/%three_letters_code%/%file_name%

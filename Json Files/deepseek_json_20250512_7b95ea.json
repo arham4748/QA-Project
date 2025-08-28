@@ -1,0 +1,95 @@
+{
+  "testCases": [
+    {
+      "id": "TC-001",
+      "description": "Valid login with correct credentials",
+      "priority": "High",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username",
+        "Enter valid password",
+        "Click login button"
+      ],
+      "expectedResult": "User is logged in and redirected to dashboard",
+      "status": "Not Executed"
+    },
+    {
+      "id": "TC-002",
+      "description": "Login with invalid password",
+      "priority": "Medium",
+      "steps": [
+        "Navigate to login page",
+        "Enter valid username",
+        "Enter invalid password",
+        "Click login button"
+      ],
+      "expectedResult": "Error message 'Invalid credentials' is displayed",
+      "status": "Not Executed"
+    },
+    {
+      "id": "TC-003",
+      "description": "Login with empty username",
+      "priority": "Low",
+      "steps": [
+        "Navigate to login page",
+        "Leave username field empty",
+        "Enter valid password",
+        "Click login button"
+      ],
+      "expectedResult": "Field validation error for username appears",
+      "status": "Not Executed"
+    }
+  ],
+  "testData": {
+    "users": {
+      "validUser": {
+        "username": "testuser@example.com",
+        "password": "SecureP@ss123"
+      },
+      "invalidUser": {
+        "username": "nonexistent@example.com",
+        "password": "WrongP@ss"
+      }
+    },
+    "boundaryValues": {
+      "stringFields": {
+        "minLength": 1,
+        "maxLength": 255,
+        "specialCharacters": "!@#$%^&*()_+-=[]{}|;:',.<>?/~`"
+      },
+      "numericFields": {
+        "minValue": 0,
+        "maxValue": 999999,
+        "decimalPlaces": 2
+      }
+    }
+  },
+  "environment": {
+    "name": "QA Environment",
+    "url": "https://qa.example.com",
+    "browsers": ["Chrome", "Firefox", "Edge", "Safari"],
+    "database": {
+      "type": "MySQL",
+      "version": "8.0",
+      "credentials": {
+        "username": "qa_user",
+        "password": "qa_password_123"
+      }
+    }
+  },
+  "metadata": {
+    "createdBy": "QA Team",
+    "creationDate": "2023-11-15",
+    "lastModified": "2023-11-16",
+    "version": "1.0.1",
+    "tags": ["authentication", "regression", "smoke"]
+  },
+  "specialCases": {
+    "nullValue": null,
+    "emptyString": "",
+    "largeNumber": 9999999999999999,
+    "unicodeCharacters": "日本語 Español Français",
+    "escapeCharacters": "Line1\\nLine2\\tTabbed",
+    "booleanValues": [true, false]
+  }
+}
