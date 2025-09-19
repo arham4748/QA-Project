@@ -1,0 +1,73 @@
+﻿{
+    "menu": {
+        "account": "我的帐户",
+        "trans": "翻译历史",
+        "signout": "退出"
+    },
+    "translate": {
+        "text": "文本翻译",
+        "file": "文件翻译",
+        "buy": "购买点数",
+        "src": "源语言",
+        "trg": "目标语言",
+        "slt-src": "选择源语言",
+        "slt-trg": "选择目标语言",
+        "type-here": "在此输入文本进行翻译...",
+        "copied": "已复制",
+        "trns-now": "立即翻译",
+        "trns": "翻译",
+        "ref": "参考文件",
+        "drg-file": "拖放文件或从您的计算机上传",
+        "sup-file": "支持的文件类型",
+        "more": "更多",
+        "size-file": "支持的最大文件大小为 10MB",
+        "up-ref": "上传参考文件",
+        "file-up": "文件上传",
+        "t-list": "术语列表",
+        "sup-ft": "支持的文件类型为",
+        "crt": "已创建",
+        "r-trns": "近期翻译",
+        "source": "源",
+        "type": "类型",
+        "lang": "语言",
+        "t-chrc": "已翻译字符",
+        "dt": "日期时间",
+        "view": "查看",
+        "download": "下载",
+        "down-all": "全部下载",
+        "copy": "复制",
+        "processing": "正在处理",
+        "completed": "已完成",
+        "failed": "失败"
+    },
+    "msg": {
+        "mandatoryfields": "要开始翻译，您必须填写必填字段，现在进行测试",
+        "srcfield": "请确保已选择源语言",
+        "trgfield": "请确保已选择目标语言",
+        "engfield": "请确保已选择翻译引擎",
+        "txtfield": "请确保您已提供待翻译文本",
+        "filefield": "请确保已选择待翻译文件",
+        "fetch": "正在获取翻译引擎...",
+        "mbexceed": "您上传的文件超过 10 MB 限制。请上传小于 10 MB 的文件"
+    },
+    "error": {
+        "processing_failed": "处理失败！请刷新并重试",
+        "text_processing_failed": "此引擎无法处理您的文本。请选择其他引擎或修改文本。",
+        "file_not_supported": "此引擎目前不支持您的文件。请选择其他引擎或选择其他文件。",
+        "languages_not_supported": "目前不支持这些语言。请选择其他语言。",
+        "missing_information": "缺少必填信息",
+        "character_limit_exceeded": "超出字符限制！",
+        "translation_processing_failed": "翻译处理失败！请重试...",
+        "no_file_uploaded": "未上传文件",
+        "unsupported_file": "此引擎不支持您的文件。请尝试其他文件。",
+        "unauthorized": "未经授权的访问！",
+        "upload_failed": "文件上传失败！",
+        "doc_id_missing": "未找到文档 ID",
+        "unable_ref_file": "无法链接参考文件。",
+        "missing_languages": "源语言和目标语言现在都需要测试才能获取支持的翻译引擎！"
+    },
+    "success": {
+        "translation_created": "已创建翻译！",
+        "translation_s_created": "翻译创建成功！"
+    }
+}
